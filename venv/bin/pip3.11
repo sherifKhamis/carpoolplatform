@@ -1,4 +1,4 @@
-#!/Users/sherifkhamis/PycharmProjects/carpoolplatform/venv/bin/python
+#!/Users/sherifkhamis/Projects/carpoolplatform/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
