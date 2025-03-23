@@ -102,7 +102,6 @@
   </template>
   
   <script>
-  import apiClient from '../services/backend';
   
   export default {
     name: "DriverRegistration",
@@ -122,16 +121,6 @@
           seats: 0,
         },
       };
-    },
-    methods: {
-      async submitForm() {
-        try {
-          const response = await apiClient.post('/api/register-driver-car/', this.form);
-          console.log("Form submitted successfully:", response.data);
-        } catch (error) {
-          console.error("Error submitting form:", error.response.data);
-        }
-      },
     },
   };
   </script>
