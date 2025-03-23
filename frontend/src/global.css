@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F8EDE3;
+    color: #798777;
+  }
+  
+  /* Center content within the wrapper only */
+  .wrapper {
+    display: flex;
+    text-align: center;
+    min-height: calc(100vh - 60px); /* Adjust based on footer height */
+    flex-direction: column;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #798777;
+    color: #F8EDE3;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    position: relative; /* or fixed if you want it always at the bottom */
+  }
+  
+  Button {
+    background-color: #798777;
+    color: #F8EDE3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px;
+    border-color: #798777;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #798777;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    max-width: 500px;
+  }
+  
+  .formDiv {
+    display: flex;
+    align-items: center;       /* Vertically aligns label and input */
+    margin-bottom: 15px;       /* Spacing between form groups */
+    gap: 10px;                 /* Consistent spacing between label and input */
+  }
+  
+  label {
+    color: black;
+    min-width: 150px;          /* Ensures labels have consistent width */
+    text-align: right;
+  }
+  
+  input {
+    background-color: #F8EDE3;
+    color: #798777;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 4px;
+    flex: 1;                   /* Input expands to fill available space */
+  }
+  
+  .formButton {
+    background-color: #F8EDE3;
+    color: #798777;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px;
+    border-color: #F8EDE3;
+    border-radius: 10px;
+  }
