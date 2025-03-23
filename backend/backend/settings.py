@@ -36,8 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',  # Ensure this is correct
-    'corsheaders',     # Ensure this is correct
+    'rest_framework',  # Für die REST-API
+    'corsheaders',     # Für Cross-Origin-Anfragen
+    'driver_registration',  # Deine neue App
 ]
 
 MIDDLEWARE = [
@@ -116,3 +117,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/stable/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",  # URL deines Frontends
+]

@@ -102,6 +102,7 @@
   </template>
   
   <script>
+  import axios from 'axios';
   
   export default {
     name: "DriverRegistration",
@@ -122,6 +123,17 @@
         },
       };
     },
+    methods: {
+      async submitForm() {
+        try {
+          const response = await axios.post('http://127.0.0.1:8000/api/register-driver/', this.form);
+          alert(response.data.message);
+        } catch (error) {
+          console.error('Error submitting form:', error);
+          alert('Failed to register driver.');
+        }
+      }
+    }
   };
   </script>
   
